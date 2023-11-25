@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+````
+# Your Next.js Quiz App
 
-## Getting Started
+## Overview
 
-First, run the development server:
+Welcome to your Next.js Quiz App! This app is designed to provide users with an interactive quiz experience, complete with dynamic questions, scoring, and a leaderboard.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Features
+
+- **Dynamic Quiz Questions**: Fetch questions from Sanity based on difficulty.
+- **Scoring System**: Award points based on the difficulty of the question.
+- **Leaderboard**: Display a leaderboard ranking users by their total scores.
+- **User Profile**: Track user scores and progress.
+
+## Technologies Used
+
+- **Next.js**: A React framework for building server-rendered React applications.
+- **Sanity**: A headless CMS for managing content and data.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+
+## Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+````
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Set up Sanity:
+
+   - Create a Sanity account: [Sanity](https://www.sanity.io/).
+   - Set up your Sanity project and configure your schemas.
+
+4. Configure Sanity API:
+
+   - Create a `.env.local` file in the root of your project.
+   - Add your Sanity project ID and dataset name:
+
+     ```env
+     SANITY_PROJECT_ID=your-project-id
+     SANITY_DATASET=your-dataset-name
+     ```
+
+5. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+6. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see your app.
+
+## Usage
+
+- Navigate to the quiz section and answer questions to earn points.
+- Check your progress, total score, and compare scores on the leaderboard.
+
+## Contributing
+
+If you'd like to contribute to the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature-name`.
+3. Commit your changes: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature/your-feature-name`.
+5. Submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+- Thanks to [Next.js](https://nextjs.org/), [Sanity](https://www.sanity.io/), and [Tailwind CSS](https://tailwindcss.com/) for their awesome tools and frameworks.
+
+Happy quizzing!
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Replace `<repository-url>`, `your-project-id`, and `your-dataset-name` with the appropriate values for your project.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This template provides a structure for users to understand the purpose of the app, how to set it up, how to use it, and how to contribute. Adjust it according to the specific details and features of your app.
+```
