@@ -11,7 +11,7 @@ import { Borel } from "next/font/google";
 import { Spinner } from "@/components/spinner";
 import Link from "next/link";
 
-const montserrat = Borel({ weight: "400", subsets: ["latin"] });
+const borel = Borel({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
   const { isSignedIn, user } = useUser();
@@ -19,9 +19,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-around h-[80%] my-auto">
       <Image src="/learn.png" alt="learn" width={300} height={300} />
-      <p className={`${montserrat.className} text-6xl font-extrabold`}>
-        linguist
-      </p>
+      <p className={`${borel.className} text-6xl font-extrabold`}>linguist</p>
       {!isLoaded && (
         <div className="w-full flex items-center justify-center">
           <Spinner size="lg" />
